@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Library App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Book Library</h1>
+  </header>
+
+  <section id="filter-section">
+    <label for="genre-filter">Filter by Genre:</label>
+    <select id="genre-filter">
+      <option value="all">All</option>
+      <option value="fiction">Fiction</option>
+      <option value="nonfiction">Non-fiction</option>
+      <option value="scifi">Sci-Fi</option>
+    </select>
+
+    <label for="availability-filter">Availability:</label>
+    <select id="availability-filter">
+      <option value="all">All</option>
+      <option value="available">Available</option>
+      <option value="unavailable">Unavailable</option>
+    </select>
+  </section>
+
+  <section id="book-list">
+    <!-- Books will be injected here -->
+  </section>
+
+  <section id="add-book-section">
+    <h2>Add a New Book</h2>
+    <form id="add-book-form">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <select id="genre" required>
+        <option value="" disabled selected>Select Genre</option>
+        <option value="fiction">Fiction</option>
+        <option value="nonfiction">Non-fiction</option>
+        <option value="scifi">Sci-Fi</option>
+      </select>
+      <label>
+        <input type="checkbox" id="available" /> Available
+      </label>
+      <button type="submit">Add Book</button>
+    </form>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

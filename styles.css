@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+header, section {
+  margin-bottom: 20px;
+}
+
+#book-list article {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc;
+}
